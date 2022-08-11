@@ -105,6 +105,7 @@ $aluna = [
 echo "<br>";
 
 var_dump($aluna);
+// print_r($aluna);  -> Impressão sem os tipos das variáveis
 
 echo "<br><br>Imprimir posições do vetor com Foreach: <br>";
 
