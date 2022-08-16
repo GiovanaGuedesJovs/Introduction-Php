@@ -114,3 +114,52 @@ foreach($aluna as $chave => $valor){
     echo $valor;
     echo "<br>";
 };
+
+echo "<br><br>MATRIZ ASSOCIATIVA EM PHP:<br><br>";
+
+$todosAlunos = [
+    0 => [
+        "Nome: " => "Maria",
+        "Idade: " => 18,
+        "Média: " => 7.9],
+    
+    1 => [
+        "Nome: " => "João",
+        "Idade: " => 17,
+        "Média: " => 9.9]         
+];
+
+echo "Imprimindo um elemento em uma posição específica: ";
+echo $todosAlunos[0]["Nome: "];
+
+echo "<br><br>Imprimindo todos os elementos através de um For:<br><br>";
+
+for($i = 0; $i < 2; $i++){
+    foreach($todosAlunos[$i] as $chave => $valor){
+        echo "$chave $valor";
+        echo "<br>";
+    }
+};
+
+echo "<br><br>EXERCÍCIO: <br><br>"
+
+$pessoa = [
+    "Nome: " => "Jorge",
+    "Idade: " => 17,
+    "Time: " => "Bragantino",
+    "Comida: " => "Pizza"
+];
+
+foreach($pessoa as $chave => $valor){
+    echo "<strong>$chave </strong> $valor.";
+    echo "<br>";
+};
+
+echo "<br><table>";
+
+foreach($pessoa as $chave => $valor){
+    echo "
+        <tr><td><p>$chave</p></td><td><p>$valor</p></td></tr>";
+};
+
+echo "</table>";
