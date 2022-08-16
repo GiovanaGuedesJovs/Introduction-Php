@@ -97,7 +97,7 @@ var_dump($array); // Exibe na tela detalhes da variável.
 echo "<br><br>Imprimindo um array associativo: ";
 
 $aluna = [
-    "Nome: " => "Giovana",
+    "Nome: " => "Giovana", // Ou [ echo "O nome é ".$array["Nome: "]; ]
     "Idade: " => 18,
     "Média: " => 10.0
 ];
