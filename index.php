@@ -141,7 +141,7 @@ for($i = 0; $i < 2; $i++){
     }
 };
 
-echo "<br><br>EXERCÍCIO: <br><br>"
+echo "<br><br>EXERCÍCIO: <br><br>";
 
 $pessoa = [
     "Nome: " => "Jorge",
@@ -151,7 +151,7 @@ $pessoa = [
 ];
 
 foreach($pessoa as $chave => $valor){
-    echo "<strong>$chave </strong> $valor.";
+    echo "<strong>$chave</strong> $valor.";
     echo "<br>";
 };
 
@@ -159,7 +159,7 @@ echo "<br><table>";
 
 foreach($pessoa as $chave => $valor){
     echo "
-        <tr><td><p>$chave</p></td><td><p>$valor</p></td></tr>";
+        <tr><td>$chave</td><td>$valor</td></tr>";
 };
 
 echo "</table>";
